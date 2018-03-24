@@ -1,6 +1,8 @@
 # QRcode
 Artificial Idiots
+
 Bowen, Eason, Harry, Leo
+
 ***have fun***
 
 ## Time Table
