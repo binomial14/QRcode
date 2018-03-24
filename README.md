@@ -1,6 +1,7 @@
 # QRcode
-
-***any idea worth discussion***
+Artificial Idiots
+Bowen, Eason, Harry, Leo
+***have fun***
 
 ## Time Table
 | Date | Target                    | Details               |
