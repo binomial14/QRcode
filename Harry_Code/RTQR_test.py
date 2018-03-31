@@ -24,7 +24,9 @@ def main():
 
     # Begin capturing video. You can modify what video source to use with VideoCapture's argument. It's currently set
     # to be your webcam.
-    capture = cv2.VideoCapture(0)
+    capture = cv2.VideoCapture(1)
+
+    f=open('Drink_Data.txt','r')
 
     _items={
         'drink0001':0,
@@ -51,6 +53,15 @@ def main():
     }
     Sold_Number=0
 
+    _sold_data=f.readline()
+    print _sold_data
+    for i in range(5):
+        print _sold_data[i]
+        if _sold_data[i]=='1':
+            _items_sold['drink000'+chr(1+i+ord('0'))]=1
+            Sold_Number+=1
+
+    f.close()
 
     while True:
         # To quit this program press q.
@@ -115,6 +126,13 @@ def main():
                     print 'Item',i,'sold out!'
                     _items_sold[i]=1
                     Sold_Number+=1
+                    f=open('Drink_Data.txt','w')
+                    ch=''
+                    for j in range(5):
+                        ch+=chr(ord('0')+_items_sold['drink000'+chr(1+j+ord('0'))])
+                    f.write(ch)
+                    f.close()
+
             if _items[i]>0 and _check==0:
                 _items[i]=0
 
