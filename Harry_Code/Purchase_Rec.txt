@@ -1,0 +1,4 @@
+2018-03-31 23:44:26 : bought drink0005 , total: 0 -> 5
+2018-03-31 23:44:26 : bought drink0002 , total: 5 -> 7
+2018-03-31 23:44:26 : bought drink0001 , total: 7 -> 8
+2018-03-31 23:44:56 : bought drink0004 , total: 8 -> 12
